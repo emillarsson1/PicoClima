@@ -53,7 +53,7 @@
     {
         "id": "9d9c9887abd24594",
         "type": "ui_tab",
-        "name": "Emil's house - live data",
+        "name": "Live data",
         "icon": "dashboard",
         "order": 1,
         "disabled": false,
@@ -140,7 +140,7 @@
             }
         },
         "site": {
-            "name": "Emil's house",
+            "name": "My house",
             "hideToolbar": "false",
             "allowSwipe": "false",
             "lockMenu": "false",
@@ -227,7 +227,7 @@
     {
         "id": "27a780859f0371c6",
         "type": "ui_tab",
-        "name": "Emils house - historic data",
+        "name": "Historic data",
         "icon": "dashboard",
         "order": 2,
         "disabled": false,
