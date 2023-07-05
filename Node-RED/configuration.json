@@ -1,1 +1,1125 @@
-
+[
+    {
+        "id": "92598ba18c0af665",
+        "type": "tab",
+        "label": "Temperature and humidity - upstairs",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0333a0f151240a99",
+        "type": "tab",
+        "label": "Visualizations",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "93d18b818ad04ee3",
+        "type": "tab",
+        "label": "Notifications",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ab122815b86fc504",
+        "type": "mqtt-broker",
+        "name": "Temperature and humidity",
+        "broker": "io.adafruit.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "9d9c9887abd24594",
+        "type": "ui_tab",
+        "name": "Emil's house - live data",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "075df1e58c395465",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "Trebuchet MS,Helvetica,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Trebuchet MS,Helvetica,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Emil's house",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "a9a0e1384029d330",
+        "type": "ui_group",
+        "name": "Temperature - upstairs",
+        "tab": "9d9c9887abd24594",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0b7497fbcbe683c8",
+        "type": "ui_group",
+        "name": "Humidity - upstairs",
+        "tab": "9d9c9887abd24594",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e5ac0da57b2d5585",
+        "type": "ui_group",
+        "name": "Summary",
+        "tab": "9d9c9887abd24594",
+        "order": 6,
+        "disp": true,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8b47ab5baf4e4719",
+        "type": "ui_group",
+        "d": true,
+        "name": "Date and time",
+        "tab": "9d9c9887abd24594",
+        "order": 1,
+        "disp": false,
+        "width": "15",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1b0e7b0efd5f6a0a",
+        "type": "MySQLdatabase",
+        "name": "MySQL",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "temp_and_humidity",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "dca6b6a67ebd5148",
+        "type": "ui_group",
+        "name": "Visualizations",
+        "tab": "27a780859f0371c6",
+        "order": 2,
+        "disp": true,
+        "width": 10,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "27a780859f0371c6",
+        "type": "ui_tab",
+        "name": "Emils house - historic data",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c932b1831439a69c",
+        "type": "twilio-api",
+        "name": "Twilio",
+        "sid": "AC97a38dd3a90b30b3d74f4c90e5553b7e",
+        "from": "+15416562750"
+    },
+    {
+        "id": "5e9bb7cabb4ce445",
+        "type": "ui_group",
+        "name": "Plant moisture",
+        "tab": "9d9c9887abd24594",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d2c0b0150c941b34",
+        "type": "ui_group",
+        "name": "Plant temperature",
+        "tab": "9d9c9887abd24594",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a2932e597cfa880b",
+        "type": "mqtt in",
+        "z": "92598ba18c0af665",
+        "name": "",
+        "topic": "YOUR_TOPIC",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ab122815b86fc504",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 480,
+        "y": 140,
+        "wires": [
+            [
+                "13766843207fb825",
+                "da9840bd583a6c20",
+                "7ca4a39c41b29919",
+                "bfc8c723afa06906",
+                "0b0e1a29d02f1112"
+            ]
+        ]
+    },
+    {
+        "id": "13766843207fb825",
+        "type": "ui_text",
+        "z": "92598ba18c0af665",
+        "group": "a9a0e1384029d330",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Current temperature",
+        "format": "{{msg.payload}} ° C",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 860,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "2a0c5d73473f911d",
+        "type": "mqtt in",
+        "z": "92598ba18c0af665",
+        "name": "",
+        "topic": "YOUR_TOPIC",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ab122815b86fc504",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 470,
+        "y": 460,
+        "wires": [
+            [
+                "5a4311434e9783c5",
+                "4e35670e092ad6d5",
+                "63018803cb782515",
+                "dd13975364a2602f"
+            ]
+        ]
+    },
+    {
+        "id": "5a4311434e9783c5",
+        "type": "ui_text",
+        "z": "92598ba18c0af665",
+        "group": "0b7497fbcbe683c8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Current humidity",
+        "format": "{{msg.payload}} %",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1090,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "da9840bd583a6c20",
+        "type": "ui_gauge",
+        "z": "92598ba18c0af665",
+        "name": "Current temperature gauge",
+        "group": "a9a0e1384029d330",
+        "order": 2,
+        "width": 6,
+        "height": 5,
+        "gtype": "gage",
+        "title": "",
+        "label": "° Celsius",
+        "format": "{{value}}",
+        "min": "15",
+        "max": "35",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "22",
+        "seg2": "25",
+        "diff": false,
+        "className": "",
+        "x": 1120,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "4e35670e092ad6d5",
+        "type": "ui_gauge",
+        "z": "92598ba18c0af665",
+        "name": "Current humidity gauge",
+        "group": "0b7497fbcbe683c8",
+        "order": 2,
+        "width": 6,
+        "height": 5,
+        "gtype": "gage",
+        "title": "",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#ca3838",
+            "#1eff00",
+            "#ca3838"
+        ],
+        "seg1": "39",
+        "seg2": "61",
+        "diff": false,
+        "className": "",
+        "x": 1110,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "63018803cb782515",
+        "type": "function",
+        "z": "92598ba18c0af665",
+        "name": "humidity_check",
+        "func": "if (msg.payload >= 40 && msg.payload <= 60) {\n    msg.payload = \"The humidity upstairs is perfect right now. ✅\";\n} else if(msg.payload < 40) {\n    msg.payload = \"The humidity upstairs is low right now.\";\n} else {\n    msg.payload = \"The humidity upstairs is high right now.\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 520,
+        "wires": [
+            [
+                "42b80f9729bf0e2d"
+            ]
+        ]
+    },
+    {
+        "id": "7ca4a39c41b29919",
+        "type": "function",
+        "z": "92598ba18c0af665",
+        "name": "temperature_check",
+        "func": "if (msg.payload >= 20 && msg.payload <= 23) {\n    msg.payload = \"The temperature upstairs is perfect right now. ✅\";\n} else if(msg.payload < 20 && msg.payload >=18) {\n    msg.payload = \"The temperature upstairs is a bit low right now. \\u26A0\";\n} else if(msg.payload < 18) {\n    msg.payload=\"The temperature upstairs is very low right now.\"\n} else if(msg.payload > 24 && msg.payload <= 26) {\n    msg.payload =\"The temperature upstairs is a bit high right now. <div style='color:red;'>&#9888;</div>\"\n} else {\n    msg.payload = \"The temperature upstairs is very high right now. 🔥\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 200,
+        "wires": [
+            [
+                "61e4085ff512d424"
+            ]
+        ]
+    },
+    {
+        "id": "bfc8c723afa06906",
+        "type": "function",
+        "z": "92598ba18c0af665",
+        "name": "last_update",
+        "func": "var now = new Date();\nmsg.payload = \"Last update: \" + now.toLocaleString();\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 260,
+        "wires": [
+            [
+                "091f6a12a4109541"
+            ]
+        ]
+    },
+    {
+        "id": "42b80f9729bf0e2d",
+        "type": "ui_text",
+        "z": "92598ba18c0af665",
+        "group": "e5ac0da57b2d5585",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Humidity status",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1080,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "61e4085ff512d424",
+        "type": "ui_text",
+        "z": "92598ba18c0af665",
+        "group": "e5ac0da57b2d5585",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Temperature status",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1090,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "091f6a12a4109541",
+        "type": "ui_text",
+        "z": "92598ba18c0af665",
+        "group": "e5ac0da57b2d5585",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Last update",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1070,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "e8115c8820cff3b5",
+        "type": "mysql",
+        "z": "92598ba18c0af665",
+        "mydb": "1b0e7b0efd5f6a0a",
+        "name": "",
+        "x": 820,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dd13975364a2602f",
+        "type": "function",
+        "z": "92598ba18c0af665",
+        "name": "Insert humidity",
+        "func": "var dateTime = new Date();\n\nvar topic = msg.topic;\n\nmsg.topic = \"INSERT INTO humidity (date_and_time, humidity, topic) VALUES (?, ?, ?)\";\nmsg.payload = [dateTime, msg.payload, topic];\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 320,
+        "wires": [
+            [
+                "e8115c8820cff3b5"
+            ]
+        ]
+    },
+    {
+        "id": "0b0e1a29d02f1112",
+        "type": "function",
+        "z": "92598ba18c0af665",
+        "name": "Insert temperature",
+        "func": "var dateTime = new Date();\n\nvar topic = msg.topic;\n\nmsg.topic = \"INSERT INTO temperature (date_and_time, temp, topic) VALUES (?, ?, ?)\";\nmsg.payload = [dateTime, msg.payload, topic];\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 280,
+        "wires": [
+            [
+                "e8115c8820cff3b5"
+            ]
+        ]
+    },
+    {
+        "id": "f4999acd3ecb2e35",
+        "type": "mqtt in",
+        "z": "92598ba18c0af665",
+        "name": "",
+        "topic": "YOUR_TOPIC",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ab122815b86fc504",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 500,
+        "y": 620,
+        "wires": [
+            [
+                "50d81b5ca0352c5a",
+                "a55dad1170eaccb0",
+                "791ee1eae9cab162"
+            ]
+        ]
+    },
+    {
+        "id": "e5f6663ac902c959",
+        "type": "mqtt in",
+        "z": "92598ba18c0af665",
+        "name": "",
+        "topic": "YOUR_TOPIC",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ab122815b86fc504",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 480,
+        "y": 700,
+        "wires": [
+            [
+                "7662187ab391bd72",
+                "5896114fbec06588",
+                "e65a26e854daf4bf",
+                "6a1619235ab6669b",
+                "36c64bb2b0e59ab0"
+            ]
+        ]
+    },
+    {
+        "id": "7662187ab391bd72",
+        "type": "function",
+        "z": "92598ba18c0af665",
+        "name": "Insert soil moisture",
+        "func": "var dateTime = new Date();\n\nvar topic = msg.topic;\n\nmsg.topic = \"INSERT INTO soil_moisture (date_and_time, moisture, topic) VALUES (?, ?, ?)\";\nmsg.payload = [dateTime, msg.payload, topic];\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 680,
+        "wires": [
+            [
+                "e8115c8820cff3b5"
+            ]
+        ]
+    },
+    {
+        "id": "cd812730b31b64f3",
+        "type": "twilio out",
+        "z": "92598ba18c0af665",
+        "twilio": "c932b1831439a69c",
+        "twilioType": "sms",
+        "url": "",
+        "number": "123456789",
+        "name": "Soil SMS notification",
+        "x": 1200,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "285bd536e935aaa2",
+        "type": "function",
+        "z": "92598ba18c0af665",
+        "name": "Send low soil moisture notification",
+        "func": "if (Array.isArray(msg.payload) && msg.payload.length > 0) {\n    \n    let lastSent = new Date(msg.payload[0].date_and_time).getTime();\n    let now = new Date().getTime();\n    let differenceInHours = Math.abs(now - lastSent) / 36e5;\n    console.log(differenceInHours)\n    \n    if (differenceInHours >= 6) {\n        msg.payload = \"Your plant in the upstairs living room window is running low on water. \\nYou should water it ASAP!\";\n        return msg;\n    }\n} else {\n    msg.payload = \"Your plant in the upstairs living room window is running low on water. \\nYou should water it ASAP!\";\n    return msg;\n}\nreturn null;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 900,
+        "wires": [
+            [
+                "cd812730b31b64f3",
+                "382ba6641a090c79"
+            ]
+        ]
+    },
+    {
+        "id": "5896114fbec06588",
+        "type": "function",
+        "z": "92598ba18c0af665",
+        "name": "Check last soil moisture notification",
+        "func": "if (msg.payload < 700) {\n    msg.topic = `SELECT * FROM notifications WHERE date_and_time = (SELECT MAX(date_and_time) FROM notifications)`;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 900,
+        "wires": [
+            [
+                "25161c1f3f7f2e74"
+            ]
+        ]
+    },
+    {
+        "id": "25161c1f3f7f2e74",
+        "type": "mysql",
+        "z": "92598ba18c0af665",
+        "mydb": "1b0e7b0efd5f6a0a",
+        "name": "",
+        "x": 660,
+        "y": 900,
+        "wires": [
+            [
+                "285bd536e935aaa2"
+            ]
+        ]
+    },
+    {
+        "id": "382ba6641a090c79",
+        "type": "function",
+        "z": "92598ba18c0af665",
+        "name": "Insert notification",
+        "func": "var dateTime = new Date();\n\nvar topic = msg.topic;\n\nmsg.topic = \"INSERT INTO notifications (date_and_time, type, message, phone_number) VALUES (?, ?, ?, ?)\";\nmsg.payload = [dateTime, \"low_soil_moisture\", \"Your plant in the upstairs living room window is running low on water. \\nYou should water it ASAP!\", \"+123456789\"];\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1190,
+        "y": 940,
+        "wires": [
+            [
+                "edd7f9b56a726030"
+            ]
+        ]
+    },
+    {
+        "id": "edd7f9b56a726030",
+        "type": "mysql",
+        "z": "92598ba18c0af665",
+        "mydb": "1b0e7b0efd5f6a0a",
+        "name": "",
+        "x": 1380,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e65a26e854daf4bf",
+        "type": "ui_gauge",
+        "z": "92598ba18c0af665",
+        "name": "Soil moisture",
+        "group": "5e9bb7cabb4ce445",
+        "order": 2,
+        "width": 6,
+        "height": 5,
+        "gtype": "gage",
+        "title": "",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "200",
+        "max": "2000",
+        "colors": [
+            "#ed2602",
+            "#04fa00",
+            "#ca3838"
+        ],
+        "seg1": "700",
+        "seg2": "1000",
+        "diff": false,
+        "className": "",
+        "x": 1070,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "50d81b5ca0352c5a",
+        "type": "function",
+        "z": "92598ba18c0af665",
+        "name": "Insert soil temperature",
+        "func": "var dateTime = new Date();\n\nvar topic = msg.topic;\n\nmsg.topic = \"INSERT INTO soil_temperature (date_and_time, temp, topic) VALUES (?, ?, ?)\";\nmsg.payload = [dateTime, msg.payload, topic];\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 580,
+        "wires": [
+            [
+                "e8115c8820cff3b5"
+            ]
+        ]
+    },
+    {
+        "id": "791ee1eae9cab162",
+        "type": "ui_gauge",
+        "z": "92598ba18c0af665",
+        "name": "Soil temperature",
+        "group": "d2c0b0150c941b34",
+        "order": 2,
+        "width": 6,
+        "height": 5,
+        "gtype": "gage",
+        "title": "",
+        "label": "Celsius",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#fbfb2d",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1080,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "6a1619235ab6669b",
+        "type": "ui_text",
+        "z": "92598ba18c0af665",
+        "group": "5e9bb7cabb4ce445",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Current soil moisture",
+        "format": "{{msg.payload}} units",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1100,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "a55dad1170eaccb0",
+        "type": "ui_text",
+        "z": "92598ba18c0af665",
+        "group": "d2c0b0150c941b34",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Current soil temperature",
+        "format": "{{msg.payload}} ° C",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 870,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "36c64bb2b0e59ab0",
+        "type": "function",
+        "z": "92598ba18c0af665",
+        "name": "moisture_check",
+        "func": "if (msg.payload >= 700 && msg.payload <= 1000) {\n    msg.payload = \"The plant moisture is perfect right now. ✅\";\n} else if(msg.payload < 700 && msg.payload >=200) {\n    msg.payload = \"The plant soil is very dry right now \\u26A0\";\n} else if(msg.payload > 1000) {\n    msg.payload=\"The plant soil is very wet right now\"\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 780,
+        "wires": [
+            [
+                "5869f818e84639f6"
+            ]
+        ]
+    },
+    {
+        "id": "5869f818e84639f6",
+        "type": "ui_text",
+        "z": "92598ba18c0af665",
+        "group": "e5ac0da57b2d5585",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Soil humidity status",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1090,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "0fa411b623f54349",
+        "type": "ui_chart",
+        "z": "0333a0f151240a99",
+        "name": "",
+        "group": "dca6b6a67ebd5148",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Humidity - upstairs",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "YYYY-MM-DD",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "3",
+        "removeOlderPoints": "10000",
+        "removeOlderUnit": "604800",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1110,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9829e6e38123fa31",
+        "type": "mysql",
+        "z": "0333a0f151240a99",
+        "mydb": "1b0e7b0efd5f6a0a",
+        "name": "",
+        "x": 640,
+        "y": 140,
+        "wires": [
+            [
+                "9208cc242a51ebcc"
+            ]
+        ]
+    },
+    {
+        "id": "fea525004c2c9f48",
+        "type": "inject",
+        "z": "0333a0f151240a99",
+        "name": "Inject temperature values",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 160,
+        "wires": [
+            [
+                "951be52aa8face79",
+                "c48a71a058343b7d"
+            ]
+        ]
+    },
+    {
+        "id": "951be52aa8face79",
+        "type": "function",
+        "z": "0333a0f151240a99",
+        "name": "Get temperature values",
+        "func": "msg.topic = \"SELECT date_and_time, temp FROM temperature\";\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 140,
+        "wires": [
+            [
+                "9829e6e38123fa31"
+            ]
+        ]
+    },
+    {
+        "id": "c48a71a058343b7d",
+        "type": "function",
+        "z": "0333a0f151240a99",
+        "name": "Get humidity values",
+        "func": "msg.topic = \"SELECT date_and_time, humidity FROM humidity\";\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 200,
+        "wires": [
+            [
+                "bfe42267c506c1e0"
+            ]
+        ]
+    },
+    {
+        "id": "bfe42267c506c1e0",
+        "type": "mysql",
+        "z": "0333a0f151240a99",
+        "mydb": "1b0e7b0efd5f6a0a",
+        "name": "",
+        "x": 640,
+        "y": 200,
+        "wires": [
+            [
+                "02187b2da134f734"
+            ]
+        ]
+    },
+    {
+        "id": "9208cc242a51ebcc",
+        "type": "function",
+        "z": "0333a0f151240a99",
+        "name": "Format temperature data",
+        "func": "\nvar series = \"Temperature\";\n\n\nvar data = msg.payload.map(function (row) {\n    // Convert the 'date_and_time' into a timestamp (if it isn't already)\n    var timestamp = (typeof row.date_and_time === 'number') ? row.date_and_time : new Date(row.date_and_time).getTime();\n\n    return { x: timestamp, y: row.temp }; // Use 'row.temp' instead of 'row.temperature'\n});\n\nmsg.payload = [\n    {\n        \"series\": [series],\n        \"data\": [data],\n        \"labels\": [\"\"]\n    }\n];\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 140,
+        "wires": [
+            [
+                "0f56675811bf2167"
+            ]
+        ]
+    },
+    {
+        "id": "02187b2da134f734",
+        "type": "function",
+        "z": "0333a0f151240a99",
+        "name": "Format humidity data",
+        "func": "var series = \"Humidity\";\n\nvar data = msg.payload.map(function (row) {\n    \n    var timestamp = (typeof row.date_and_time === 'number') ? row.date_and_time : new Date(row.date_and_time).getTime();\n    return { x: timestamp, y: row.humidity };\n});\n\nmsg.payload = [\n    {\n        \"series\": [series],\n        \"data\": [data],\n        \"labels\": [\"\"]\n    }\n];\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 200,
+        "wires": [
+            [
+                "0fa411b623f54349"
+            ]
+        ]
+    },
+    {
+        "id": "0f56675811bf2167",
+        "type": "ui_chart",
+        "z": "0333a0f151240a99",
+        "name": "",
+        "group": "dca6b6a67ebd5148",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Temperature - upstairs",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "YYYY-MM-DD",
+        "interpolate": "linear",
+        "nodata": "Waiting for data...",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "40",
+        "removeOlder": "3",
+        "removeOlderPoints": "10000",
+        "removeOlderUnit": "604800",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1120,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    }
+]
