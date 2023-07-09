@@ -23,10 +23,14 @@ def reset():
     machine.reset()
 
 def start_mqtt():
-    print(f"Starting connection with MQTT Broker :: {MQTT_BROKER}")
-    mqttClient = MQTTClient(CLIENT_ID, MQTT_BROKER, PORT, ADAFRUIT_USERNAME, ADAFRUIT_PASSWORD, keepalive=60)
-    mqttClient.connect()
-    print(f"Connected to MQTT Broker :: {MQTT_BROKER}")
+    try:
+        print(f"Starting connection with MQTT Broker :: {MQTT_BROKER}")
+        mqttClient = MQTTClient(CLIENT_ID, MQTT_BROKER, PORT, ADAFRUIT_USERNAME, ADAFRUIT_PASSWORD, keepalive=60)
+        mqttClient.connect()
+        print(f"Connected to MQTT Broker :: {MQTT_BROKER}")
+    except OSError:
+        print("Failed to connect to MQTT Broker, resetting...")
+        reset()
 
     while True:
 
